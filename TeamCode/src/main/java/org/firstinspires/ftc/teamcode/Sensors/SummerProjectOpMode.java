@@ -43,10 +43,10 @@ public class SummerProjectOpMode extends LinearOpMode {
         while (opModeIsActive()) {
 
             run();
-            turnright();
+           /* turnright();
             runparallel();
             turnleft();
-            sense();
+            sense();*/
 
         }
     }
@@ -106,7 +106,7 @@ public class SummerProjectOpMode extends LinearOpMode {
 
     private void run() {
 
-        if(sensorForwardDistance.getDistance(DistanceUnit.CM)<3){
+        if(sensorForwardDistance.getDistance(DistanceUnit.CM)<21.5){
             off();
         } else{
             forward();
